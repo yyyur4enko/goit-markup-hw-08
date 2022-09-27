@@ -1,0 +1,45 @@
+.mdl-btn {
+    font-family: var(--primary-font);
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--secondary-color);
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 107px;
+    padding: 10px 32px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    min-width: 200px;
+    min-height: 50px;
+}
+.modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @extend %align;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover .modal-close-btn-icon,
+    &:focus .modal-close-btn-icon {
+    fill: var(--accent-color);
+}
+}
+
+.modal-close-btn-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
